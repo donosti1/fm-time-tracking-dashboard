@@ -38,7 +38,7 @@ const Card = (props: CardElements) => {
     >
       <Stack
         backgroundImage={
-          "url('/public/assets/" +
+          "url('/assets/" +
           bgColors.filter((color) => color.id == props.label).map((color) => color.icon) +
           "')"
         }
@@ -58,7 +58,7 @@ const Card = (props: CardElements) => {
           <Text fontSize="18px" fontWeight="500">
             {props.label}
           </Text>
-          <Image height={1} src="/assets/icon-ellipsis.svg" />
+          <Image alt="icon-ellipsis" height={1} src="/assets/icon-ellipsis.svg" />
         </Stack>
         <Stack
           alignItems={["center", "flex-start"]}
@@ -102,7 +102,7 @@ const App: React.FC = () => {
           padding={6}
           spacing={0}
         >
-          <Avatar showBorder borderWidth={2} src="/assets/image-jeremy.png" />
+          <Avatar showBorder alt="jeremy" borderWidth={2} src="/assets/image-jeremy.png" />
           <Stack paddingX={[4, 0]} spacing={0}>
             <Text fontSize="xs" paddingTop={[0, 6]}>
               Report for
